@@ -1,0 +1,18 @@
+clickable_minimum_required: 8.7.0
+builder: cmake
+build_args:
+  - -DUBUNTU_TOUCH=ON
+  - -DHOST_BINARY_DIR=${BUILD_DIR}/../build-host/
+  - -DOPTION_INSTALL_FHS=OFF
+  - -DPERSONAL_DIR=openttd.semphris
+prebuild:
+  - cmake -DOPTION_TOOLS_ONLY=ON -DCMAKE_C_COMPILER=cc -DCMAKE_CXX_COMPILER=c++ -B ${BUILD_DIR}/../build-host/ -S ${SRC_DIR}
+  - cmake --build ${BUILD_DIR}/../build-host/ --parallel
+framework: ubuntu-touch-24.04-1.x
+dependencies_target:
+  - libpng-dev
+  - libcurl4-gnutls-dev
+kill: openttd
+install_lib:
+- libSDL3.so*
+- libSDL2.so*

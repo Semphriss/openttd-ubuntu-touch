@@ -1,0 +1,11 @@
+# http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-1.0.html
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=OpenTTD
+Icon=share/icons/hicolor/256x256/apps/openttd.png
+Exec=openttd
+Terminal=false
+Categories=Game;Simulation;
+Keywords=game;simulation;transport;tycoon;deluxe;economics;multiplayer;money;train;ship;bus;truck;aircraft;cargo;
+X-Lomiri-Touch=true

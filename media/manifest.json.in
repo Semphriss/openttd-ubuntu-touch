@@ -1,0 +1,15 @@
+{
+    "name": "openttd.semphris",
+    "description": "Reimplementation of Transport Tycoon Deluxe with enhancements",
+    "architecture": "$ENV{ARCH}",
+    "title": "OpenTTD",
+    "hooks": {
+        "openttd": {
+            "apparmor": "openttd.apparmor",
+            "desktop":  "openttd.desktop"
+        }
+    },
+    "version": "15.2.0",
+    "maintainer": "Semphris <semphris@protonmail.com>",
+    "framework" : "$ENV{CLICK_FRAMEWORK}"
+}

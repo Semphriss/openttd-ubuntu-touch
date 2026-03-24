@@ -22,6 +22,10 @@ set(BASESET_OTHER_SOURCE_FILES
         ${CMAKE_CURRENT_SOURCE_DIR}/OpenTTD-Serif.ttf
         ${CMAKE_CURRENT_SOURCE_DIR}/OpenTTD-Small.ttf
         ${CMAKE_CURRENT_SOURCE_DIR}/OpenTTD-Mono.ttf
+        ${CMAKE_CURRENT_SOURCE_DIR}/4e474658-NightGFX-1.3.0.tar
+        ${CMAKE_CURRENT_SOURCE_DIR}/4f474658-OpenGFX-8.0.tar
+        ${CMAKE_CURRENT_SOURCE_DIR}/4f534658-OpenSFX-1.0.3.tar
+        ${CMAKE_CURRENT_SOURCE_DIR}/41534658-AltSFX-12.tar
 )
 
 # Done by the subdirectories, if nforenum / grfcodec is installed

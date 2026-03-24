@@ -96,3 +96,10 @@ add_custom_target_timestamp(desktop_file
 add_dependencies(media
         desktop_file
 )
+
+if(UBUNTU_TOUCH)
+        configure_file(manifest.json.in ${CMAKE_CURRENT_BINARY_DIR}/manifest.json)
+        install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.json DESTINATION ${CMAKE_INSTALL_PREFIX})
+        install(FILES ${PROJECT_NAME}.apparmor DESTINATION ${CMAKE_INSTALL_PREFIX})
+        install(FILES openttd_ut.desktop DESTINATION ${CMAKE_INSTALL_PREFIX} RENAME openttd.desktop)
+endif()
